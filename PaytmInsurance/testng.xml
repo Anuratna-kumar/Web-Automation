@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+
+	<listener class-name="com.insurance.generic.MyTestNGListener"></listener>
+	
+</listeners>
+
+
+  <test thread-count="5" name="Test">
+  
+   <parameter name="browser" value="chrome"></parameter>
+   <parameter name="baseurl" value="https://staging.paytm.com/buy-insurance"></parameter>
+  
+  
+    <classes>
+    
+      <class name="com.insurance.scripts.InsSelectionTest"/>
+      
+    </classes>
+    
+  </test> 
+  
+</suite> 

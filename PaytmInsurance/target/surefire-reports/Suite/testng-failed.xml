@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.insurance.generic.MyTestNGListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Test(failed)">
+    <parameter name="baseurl" value="https://staging.paytm.com/buy-insurance"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.insurance.scripts.InsSelectionTest">
+        <methods>
+          <include name="chooseInsurance2"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.insurance.scripts.InsSelectionTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
